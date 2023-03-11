@@ -14,7 +14,7 @@ export default function Hero() {
         <div className='flex flex-col gap-4 items-center mb-8'> 
           {/* <WIPInput/> */}
           <a href="https://tally.so/r/mOaLok" target='_blank' rel='noreferrer'><Button label={'Join the waitlist'} style={'primaryLong'}/></a>
-          <p className='text-neutral-400 text-center text-sm max-w-[256px]'>{footnote}<span className='font-semibold'>Test Flight</span></p>
+          <p className='text-neutral-400 text-center text-sm max-w-[256px]'>{footnote}<span className='font-semibold'> Test Flight</span></p>
         </div>
         <img className='sm:w-96' src={product_image} alt="frey product" />
     </div>
