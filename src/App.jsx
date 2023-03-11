@@ -8,8 +8,8 @@ function App() {
       <HeaderWIP />
       <div className="w-1/2">
         <Hero />
-        <Footer/>
       </div>
+        <Footer/>
     </div>
   );
 }
