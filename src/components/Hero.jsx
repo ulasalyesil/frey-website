@@ -1,6 +1,5 @@
 import product_image from '../assets/images/product-image.png'
-import WIPInput from './WIPInput'
-
+import Button from './Button'
 
 export default function Hero() {
 
@@ -13,7 +12,8 @@ export default function Hero() {
             <h1 className='font-medium text-3xl sm:text-7xl text-center max-w-[720px]'><span className='font-black'>FREY▲</span> is all your accounts in one app.</h1>
         </div>
         <div className='flex flex-col gap-4 items-center mb-8'> 
-          <WIPInput/>
+          {/* <WIPInput/> */}
+          <a href="https://tally.so/r/mOaLok" target='_blank' rel='noreferrer'><Button label={'Join the waitlist'} style={'primaryLong'}/></a>
           <p className='text-neutral-400 text-center text-sm max-w-[256px]'>{footnote}<span className='font-semibold'>Test Flight</span></p>
         </div>
         <img className='sm:w-96' src={product_image} alt="frey product" />

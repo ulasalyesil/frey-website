@@ -4,7 +4,7 @@ import Hero from "./components/Hero";
 
 function App() {
   return (
-    <div className="flex flex-col items-center m-auto">
+    <div className="flex flex-col items-center justify-center m-auto">
       <HeaderWIP />
       <div className="w-1/2">
         <Hero />

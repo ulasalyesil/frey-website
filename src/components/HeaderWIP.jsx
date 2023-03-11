@@ -8,7 +8,7 @@ export default function HeaderWIP() {
         <img className='w-[100px]' src={logo} alt="frey logo" />
         <div className='flex gap-6 items-center'>
             <a href="https://twitter.com/frey_money" target='_blank' rel='noreferrer' className='hidden sm:block font-medium text-neutral-400'>Twitter</a>
-            <Button label={'Join the waitlist'} style={'primary'}/>
+            <a href="https://tally.so/r/mOaLok" target='_blank' rel='noreferrer'><Button label={'Join the waitlist'} style={'secondaryShort'}/></a>
         </div>
     </div>
   )
