@@ -4,7 +4,10 @@ import logo from '../assets/images/logo-footer.svg'
 export default function Footer() {
   return (
     <div className='flex justify-center sm:justify-between items-center w-full max-w-[1200px] mt-16 sm:mt-32 p-11'>
+      <div className='flex flex-col sm:flex-row gap-4 items-bottom'>
       <img src={logo} alt="frey logo" />
+      <p className='text-sm text-neutral-400'>All Rights Reserved. 2023</p>
+      </div>
       <ol className='gap-8 hidden sm:flex'>
         <li>
         <a href="https://twitter.com/frey_money" target='_blank' rel='noreferrer' className='font-medium text-neutral-400'>Twitter</a>
