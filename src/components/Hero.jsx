@@ -28,7 +28,7 @@ export default function Hero() {
             initial={{opacity: 0}}
             animate={{opacity: 1}}
             transition={{duration: 1, delay: 3}}
-            className='text-black w-2/4 text-center'>We're working hard to bring you the best banking experience. Join the waitlist to be the first to know when we launch.</motion.p>
+            className='text-black w-screen sm:w-2/4 text-center'>We're working hard to bring you the best banking experience. Join the waitlist to be the first to know when we launch.</motion.p>
         </motion.div>
         <motion.div 
           initial={{opacity: 0}}
