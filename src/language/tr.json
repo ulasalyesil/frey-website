@@ -1,0 +1,18 @@
+{
+    "Header": {
+        "ButtonLabel": ""
+    },
+    "Hero": {
+        "Subtitle": "YAKINDA",
+        "Title": "ile tüm banka hesapların tek bir uygulamada",
+        "Description": "Şu anda uygulama üzerinde çalışıyoruz. Hazır olduğunda haberdar olmak için tıkla.",
+        "ButtonLabel": "",
+        "Footnote": "FREY▲ yayınlandığında haberdar ol."
+    },
+    "Footer": {
+        "Copyright": "Tüm Hakları Saklıdır, 2023",
+        "Contact": "İletişime Geç",
+        "Privacy": "Gizlilik Politikası",
+        "Terms": "Kullanım Şartları"
+    }
+}

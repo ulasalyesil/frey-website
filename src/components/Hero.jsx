@@ -1,22 +1,49 @@
 import product_image from '../assets/images/product-image.png'
 import Button from './Button'
 
+import { motion } from 'framer-motion'
+
 export default function Hero() {
 
-  const footnote = '*Join the waitlist to get notified when FREY▲ is available on'
+  const footnote = 'Get notified when FREY▲ is available on'
 
   return (
     <div className='flex flex-col items-center gap-6 sm:gap-11 mt-12'>
-        <div className='flex flex-col items-center gap-2 sm:gap-4'>
-            <h5 className='font-semibold text-neutral-400'>COMING SOON</h5>
-            <h1 className='font-medium text-3xl sm:text-7xl text-center max-w-[720px]'><span className='font-black'>FREY▲</span> is all your accounts in one app.</h1>
-        </div>
-        <div className='flex flex-col gap-4 items-center mb-8'> 
+        <motion.div 
+          initial={{opacity: 0, scale: 0.01}}
+          animate={{opacity: 1, scale: 1}}
+          transition={{duration: 2, delay: 1}}
+          className='flex flex-col items-center gap-2 sm:gap-6'>
+            <motion.h5 
+              initial={{opacity: 0}}
+              animate={{opacity: 1}}
+              transition={{duration: 1, delay: 2}}
+            className='font-semibold text-neutral-400'>COMING SOON</motion.h5>
+            <motion.h1 
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            transition={{duration: 1, delay: 1}}
+            className='font-medium text-3xl sm:text-7xl text-center max-w-[720px]'><span className='font-black'>FREY▲</span> is all your accounts in one app.</motion.h1>
+            <motion.p 
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            transition={{duration: 1, delay: 3}}
+            className='text-black w-2/4 text-center'>We're working hard to bring you the best banking experience. Join the waitlist to be the first to know when we launch.</motion.p>
+        </motion.div>
+        <motion.div 
+          initial={{opacity: 0}}
+          animate={{opacity: 1}}
+          transition={{duration: 1, delay: 4}}
+          className='flex flex-col gap-4 items-center mb-8'> 
           {/* <WIPInput/> */}
           <a href="https://tally.so/r/mOaLok" target='_blank' rel='noreferrer'><Button label={'Join the waitlist'} style={'primaryLong'}/></a>
           <p className='text-neutral-400 text-center text-sm max-w-[256px]'>{footnote}<span className='font-semibold'> Test Flight</span></p>
-        </div>
-        <img className='sm:w-96' src={product_image} alt="frey product" />
+        </motion.div>
+        <motion.img 
+          initial={{opacity: 0, y: 200}}
+          animate={{opacity: 1, y: 0}}
+          transition={{duration: 1, delay: 0.5}}
+          className='sm:w-96' src={product_image} alt="frey product" />
     </div>
   )
 }

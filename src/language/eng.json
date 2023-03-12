@@ -1,0 +1,18 @@
+{
+    "Header": {
+        "ButtonLabel": "Join the waitlist"
+    },
+    "Hero": {
+        "Subtitle": "COMING SOON",
+        "Title": "is all your accounts in one app",
+        "Description": "We are currently working on the app and will be ready soon. Join the waitlist to be the first to know when we launch.",
+        "ButtonLabel": "Join the waitlist",
+        "Footnote": "Get notified when FREY▲ is available on"
+    },
+    "Footer": {
+        "Copyright": "All Rights Reserved, 2023",
+        "Contact": "Contact Us",
+        "Privacy": "Privacy Policy",
+        "Terms": "Terms of Use"
+    }
+}
