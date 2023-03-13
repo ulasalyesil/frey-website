@@ -25,7 +25,7 @@ export default function Hero() {
             initial={{opacity: 0}}
             animate={{opacity: 1}}
             transition={{duration: 1, delay: 1}}
-            className='font-medium text-3xl sm:text-7xl text-center px-2 sm:p-0 max-w-[720px]'><span className='inline-flex items-baseline'><img src={logo} alt="logo" className='self-center h-12' /></span> is all your accounts in one app.</motion.h1>
+            className='font-medium text-3xl sm:text-7xl text-center px-2 sm:p-0 max-w-[720px]'><span className='inline-flex items-baseline'><img src={logo} alt="logo" className='self-center h-6 sm:h-12' /></span> is all your accounts in one app.</motion.h1>
             <motion.p 
             initial={{opacity: 0}}
             animate={{opacity: 1}}
