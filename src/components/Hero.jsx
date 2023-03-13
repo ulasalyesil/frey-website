@@ -1,4 +1,4 @@
-import product_image from '../assets/images/product-image.png'
+import product_image from '../assets/images/new-product-image.png'
 import Button from './Button'
 
 import { motion } from 'framer-motion'
