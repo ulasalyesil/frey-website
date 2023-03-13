@@ -10,8 +10,8 @@ function App() {
   
   return (
       <IntlProvider>
-        <div className="flex flex-col items-center justify-center m-auto">
-          <HeaderWIP />
+        <div className="flex flex-col items-center justify-center m-auto pt-16">
+          {/* <HeaderWIP /> */}
           <div className="w-1/2">
             <Hero />
           </div>

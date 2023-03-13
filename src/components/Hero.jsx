@@ -17,7 +17,7 @@ export default function Hero() {
             <motion.h5 
               initial={{opacity: 0}}
               animate={{opacity: 1}}
-              transition={{duration: 1, delay: 2}}
+              transition={{duration: 1, delay: 2.5}}
             className='font-semibold text-neutral-400 text-sm sm:text-base'>COMING SOON</motion.h5>
             <motion.h1 
             initial={{opacity: 0}}
@@ -28,7 +28,7 @@ export default function Hero() {
             initial={{opacity: 0}}
             animate={{opacity: 1}}
             transition={{duration: 1, delay: 3}}
-            className='text-black w-screen px-4 sm:px-0 sm:w-2/4 text-center'>We're working hard to bring you the best banking experience. Join the waitlist to be the first to know when we launch.</motion.p>
+            className='text-black w-screen px-4   sm:w-2/4 text-center'>We're working hard to bring you the best banking experience. Join the waitlist to be the first to know when we launch.</motion.p>
         </motion.div>
         <motion.div 
           initial={{opacity: 0}}
