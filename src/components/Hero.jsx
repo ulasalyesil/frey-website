@@ -1,9 +1,11 @@
 import product_image from '../assets/images/new-product-image.png'
 import Button from './Button'
+import logo from '../assets/images/logo.svg'
 
 import { motion } from 'framer-motion'
 
 export default function Hero() {
+
 
   const footnote = 'Get notified when FREY▲ is available on'
 
@@ -23,7 +25,7 @@ export default function Hero() {
             initial={{opacity: 0}}
             animate={{opacity: 1}}
             transition={{duration: 1, delay: 1}}
-            className='font-medium text-3xl sm:text-7xl text-center px-2 sm:p-0 max-w-[720px]'><span className='font-black'>FREY▲</span> is all your accounts in one app.</motion.h1>
+            className='font-medium text-3xl sm:text-7xl text-center px-2 sm:p-0 max-w-[720px]'><span className='inline-flex items-baseline'><img src={logo} alt="logo" className='self-center h-12' /></span> is all your accounts in one app.</motion.h1>
             <motion.p 
             initial={{opacity: 0}}
             animate={{opacity: 1}}
@@ -39,11 +41,15 @@ export default function Hero() {
           <a href="https://tally.so/r/mOaLok" target='_blank' rel='noreferrer'><Button label={'Join the waitlist'} style={'primaryLong'}/></a>
           <p className='text-neutral-400 text-center text-sm max-w-[256px]'>{footnote}<span className='font-semibold'> Test Flight</span></p>
         </motion.div>
+        <motion.span
+        whileHover={{scale: 1.05}}
+        transition={{duration: 0.25}}>
         <motion.img 
           initial={{opacity: 0, y: 200}}
           animate={{opacity: 1, y: 0}}
           transition={{duration: 1, delay: 0.5}}
           className='sm:w-96' src={product_image} alt="frey product" />
+          </motion.span>
     </div>
   )
 }
