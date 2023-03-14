@@ -1,4 +1,4 @@
-## Project Overview
+## Frey
 
 The main purpose of this website is to showcase Frey's products and services. The website is designed to be responsive and user-friendly. The website is divided into multiple sections, each highlighting a particular aspect of Frey's business.
 
