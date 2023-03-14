@@ -19,23 +19,23 @@ export default function Hero() {
             <motion.h5 
               initial={{opacity: 0}}
               animate={{opacity: 1}}
-              transition={{duration: 1, delay: 2.5}}
+              transition={{duration: 1, delay: 0.25}}
             className='font-semibold text-neutral-400 text-sm sm:text-base'>COMING SOON</motion.h5>
             <motion.h1 
             initial={{opacity: 0}}
             animate={{opacity: 1}}
-            transition={{duration: 1, delay: 1}}
+            transition={{duration: 1, delay: 1.5}}
             className='font-medium text-3xl sm:text-7xl text-center px-2 sm:p-0 max-w-[720px]'><span className='inline-flex items-baseline'><img src={logo} alt="logo" className='self-center h-6 sm:h-12' /></span> is all your accounts in one app.</motion.h1>
             <motion.p 
             initial={{opacity: 0}}
             animate={{opacity: 1}}
-            transition={{duration: 1, delay: 3}}
+            transition={{duration: 1, delay: 2}}
             className='text-black w-screen px-4   sm:w-2/4 text-center'>We're working hard to bring you the best banking experience. Join the waitlist to be the first to know when we launch.</motion.p>
         </motion.div>
         <motion.div 
           initial={{opacity: 0}}
           animate={{opacity: 1}}
-          transition={{duration: 1, delay: 4}}
+          transition={{duration: 1, delay: 2.5}}
           className='flex flex-col gap-4 items-center mb-8'> 
           {/* <WIPInput/> */}
           <a href="https://tally.so/r/mOaLok" target='_blank' rel='noreferrer'><Button label={'Join the waitlist'} style={'primaryLong'}/></a>
