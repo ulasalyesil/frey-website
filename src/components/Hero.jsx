@@ -12,8 +12,8 @@ export default function Hero() {
   return (
     <div className='flex flex-col items-center gap-6 sm:gap-11 mt-12'>
         <motion.div 
-          initial={{opacity: 0, scale: 0.01}}
-          animate={{opacity: 1, scale: 1}}
+          initial={{opacity: 0}}
+          animate={{opacity: 1}}
           transition={{duration: 2, delay: 1}}
           className='flex flex-col items-center gap-2 sm:gap-6'>
             <motion.h5 
