@@ -7,7 +7,7 @@ import Button from './Button'
 const content = {
   "item-1": {
     title: "Unified Dashboard",
-    description: "Frey provides a unified dashboard displaying all bank accounts, investments, and credit cards. This feature will provide users with a comprehensive overview of their finances without having to switch between accounts."
+    description: "Frey provides a unified dashboard displaying all bank accounts, and credit cards. This enables you to have a comprehensive overview of your finances without having to switch between accounts."
   },
   "item-2": {
     title: "Transaction History",
