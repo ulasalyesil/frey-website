@@ -3,6 +3,7 @@ import * as Accordion from '@radix-ui/react-accordion'
 import { Component1Icon as Icon} from '@radix-ui/react-icons'
 import img1 from '../assets/images/new-product-image.png'
 import Button from './Button'
+import { motion } from 'framer-motion'
 
 const content = {
   "item-1": {
@@ -25,7 +26,11 @@ const contentStyle = 'text-sm text-neutral-500 data-[state=open]:animate-slideDo
 
 export default function Features() {
   return (
-    <div className='flex flex-col gap-14 items-center'>
+    <motion.div
+    className='flex flex-col gap-14 items-center'
+    initial={{opacity: 0, y: 200}}
+    whileInView={{opacity: 1, y: 0}}
+    transition={{duration: 1}}>
       <h2 className='font-semibold text-2xl text-neutral-500'>Features</h2>
     <div className='flex gap-8'>
 
@@ -66,6 +71,6 @@ export default function Features() {
         <img src={img1} className='w-64 absolute top-10' />
       </div>
     </div>
-    </div>
+    </motion.div>
   )
 }
