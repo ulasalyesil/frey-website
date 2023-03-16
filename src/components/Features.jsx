@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import * as Accordion from '@radix-ui/react-accordion'
 import { Component1Icon as Icon} from '@radix-ui/react-icons'
 import img1 from '../assets/images/new-product-image.png'
@@ -25,12 +25,15 @@ const triggerStyle = 'w-full flex gap-2 items-center'
 const contentStyle = 'text-sm text-neutral-500 data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp'
 
 export default function Features() {
+
+  const scrollRef = useRef(null);
+
   return (
     <motion.div
     className='flex flex-col gap-14 items-center'
-    initial={{opacity: 0, y: 200}}
-    whileInView={{opacity: 1, y: 0}}
-    transition={{duration: 1}}>
+    initial={{opacity: 0}}
+    whileInView={{opacity: 1}}
+    transition={{duration: 0.5}}>
       <h2 className='font-semibold text-2xl text-neutral-500'>Features</h2>
     <div className='flex gap-8'>
 
