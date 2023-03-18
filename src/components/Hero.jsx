@@ -48,7 +48,7 @@ export default function Hero() {
           initial={{opacity: 0, y: 200}}
           animate={{opacity: 1, y: 0}}
           transition={{duration: 1, delay: 0.5}}
-          className='sm:w-96' src={product_image} alt="frey product" />
+          className='sm:w-96 p-8 sm:p-0' src={product_image} alt="frey product" />
           </motion.span>
     </div>
   )
