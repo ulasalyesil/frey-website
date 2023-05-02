@@ -1,0 +1,15 @@
+{
+    "urls": {
+        "waitlistForm": "https://form.jotform.com/230764842236054",
+        "waitlistFormTally": "https://tally.so/r/mOaLok",
+        "email": "mailto:ulas@frey.money",
+        "twitter": "https://twitter.com/frey_money",
+        "privacy": "https://frey-money.notion.site/Privacy-Policy-c1ff16017e90469cbc1530807cf117e4",
+        "terms": "https://frey-money.notion.site/Terms-of-Use-0a642685662c480fb49fb9af675d1ef4"
+    },
+    "airtable": {
+        "ACCESS_TOKEN": "pattvl7Np48az7pr3.fa5c2f09eb32c28407f4d16ec0a14fe3003d1cebb7ac46b76ab2f4827c5efcf5",
+        "BASE_ID": "app2qph2iZ2X9c6g2",
+        "TABLE_ID": "tbl6HisrKb04y4TuB"
+    }
+}

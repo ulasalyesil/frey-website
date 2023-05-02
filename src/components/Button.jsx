@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-export default function Button({label, style, onClick}) {
+export default function Button({label, buttonStyle, onClick, type}) {
 
     const styles = {
         primaryShort: 'flex justify-center px-6 py-3 bg-black text-white rounded-full items-center font-medium shadow-lg transition',
@@ -17,7 +17,9 @@ export default function Button({label, style, onClick}) {
                 onClick={onClick}
                 whileHover={{scale: 1.05}}
                 whiteTap={{scale: 0.9}}
-                className={styles[style]}>
+                className={styles[buttonStyle]}
+                type={type}
+                >
                 {label}
             </motion.button>
         </div>
