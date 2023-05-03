@@ -10,6 +10,12 @@ export default function WaitlistForm() {
   const [submitted, setSubmitted] = useState(false);
   const [validationError, setValidationError] = useState("");
 
+  // submit form data to Airtable
+  const BASE_ID = process.env.REACT_APP_BASE_ID
+  const TABLE_ID = process.env.REACT_APP_TABLE_ID
+  const TOKEN = process.env.REACT_APP_ACCESS_TOKEN
+  const URL = `https://api.airtable.com/v0/${BASE_ID}/${TABLE_ID}`;
+
   const handleSubmit = (event) => {
     event.preventDefault();
 
@@ -19,13 +25,11 @@ export default function WaitlistForm() {
       return;
     }
 
-    // submit form data to Airtable
-    const URL = `https://api.airtable.com/v0/${globalConsts.airtable.BASE_ID}/${globalConsts.airtable.TABLE_ID}`;
 
     fetch(URL, {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${globalConsts.airtable.ACCESS_TOKEN}`,
+        Authorization: `Bearer ${TOKEN}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ fields: { email: email } }),

@@ -1,20 +1,24 @@
 import React, { useState, useEffect } from "react";
-import globalConsts from '../src/globalConsts.json'
 
 export default function APICall() {
   const [data, setData] = useState([]);
 
+  
   useEffect(() => {
-    const URL = `https://api.airtable.com/v0/${globalConsts.airtable.BASE_ID}/${globalConsts.airtable.TABLE_ID}`;
+    const BASE_ID = process.env.REACT_APP_BASE_ID
+    const TABLE_ID = process.env.REACT_APP_TABLE_ID
+    const TOKEN = process.env.REACT_APP_ACCESS_TOKEN
+    const URL = `https://api.airtable.com/v0/${BASE_ID}/${TABLE_ID}`;
+    
 
     fetch(URL, {
       headers: {
-        Authorization: `Bearer ${globalConsts.airtable.ACCESS_TOKEN}`,
+        Authorization: `Bearer ${TOKEN}`,
       },
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
+        console.log(URL);
         setData(data.records);
       })
       .catch((error) => {

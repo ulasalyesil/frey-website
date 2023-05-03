@@ -1,6 +1,7 @@
 import Footer from "./components/Footer";
 import Features from "./components/Features";
 import Hero from "./components/Hero";
+import APICall from "./APICall";
 
 //packages
 import { IntlProvider } from "react-intl";
