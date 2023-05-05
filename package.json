@@ -16,6 +16,7 @@
     "react-intl": "^6.2.10",
     "react-scripts": "5.0.1",
     "sonner": "^0.3.5",
+    "styled-components": "^5.3.10",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

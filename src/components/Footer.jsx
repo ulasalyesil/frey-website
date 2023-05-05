@@ -18,7 +18,7 @@ export default function Footer() {
         <a href={formURL} target="_blank" rel="noreferrer">
           <Button label={"Join the waitlist"} buttonStyle={"primaryLong"} />
         </a>
-      </div>
+      </div> 
 
       <div className="flex justify-center sm:justify-between items-center w-full max-w-[1200px] p-11">
         <div className="flex flex-col items-center sm:items-end sm:flex-row gap-4">

@@ -3,7 +3,6 @@ import { Toaster, toast } from "sonner";
 import { motion } from "framer-motion";
 import Button from "./Button";
 import plane from "../assets/icons/paper-plane.svg";
-import globalConsts from "../globalConsts.json";
 
 export default function WaitlistForm() {
   const [email, setEmail] = useState("");
@@ -11,9 +10,9 @@ export default function WaitlistForm() {
   const [validationError, setValidationError] = useState("");
 
   // submit form data to Airtable
-  const BASE_ID = process.env.REACT_APP_BASE_ID
-  const TABLE_ID = process.env.REACT_APP_TABLE_ID
-  const TOKEN = process.env.REACT_APP_ACCESS_TOKEN
+  const BASE_ID = process.env.REACT_APP_BASE_ID;
+  const TABLE_ID = process.env.REACT_APP_TABLE_ID;
+  const TOKEN = process.env.REACT_APP_ACCESS_TOKEN;
   const URL = `https://api.airtable.com/v0/${BASE_ID}/${TABLE_ID}`;
 
   const handleSubmit = (event) => {
@@ -24,7 +23,6 @@ export default function WaitlistForm() {
       setValidationError("Please enter a valid email address.");
       return;
     }
-
 
     fetch(URL, {
       method: "POST",
@@ -94,11 +92,11 @@ export default function WaitlistForm() {
           )}
         </form>
       ) : (
-        <motion.div 
-        className="flex flex-col items-center justify-center gap-4 bg-black/80 backdrop-blur-md text-white p-24 rounded-2xl absolute z-20 shadow-2xl"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
+        <motion.div
+          className="flex flex-col items-center justify-center gap-4 bg-black/80 backdrop-blur-md text-white p-24 rounded-2xl absolute z-20 shadow-2xl"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
         >
           <h1 className="text-3xl font-bold mb-2">Thanks for signing up!</h1>
           <p className="text-lg">We'll be in touch soon.</p>
