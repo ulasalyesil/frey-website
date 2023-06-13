@@ -4,10 +4,13 @@ import logo from "../assets/images/logo.svg";
 import { motion } from "framer-motion";
 import HeroTitle from "./HeroTitle";
 import WaitlistForm from "./WaitlistForm";
+import Button from "./Button";
+import globalConsts from '../globalConsts.json'
+
 
 export default function Hero() {
   const footnote = "Get notified when FREY▲ is available on";
-  // const formURL = globalConsts.urls.waitlistForm;
+  const formURL = globalConsts.urls.waitlistFormTally;
 
   return (
     <div className="flex flex-col items-center gap-6 sm:gap-11 mt-12">
@@ -54,11 +57,11 @@ export default function Hero() {
         transition={{ duration: 1, delay: 2.5 }}
         className="flex flex-col gap-4 items-center mb-8"
       >
-        <WaitlistForm />
-        {/* <WIPInput />
+        {/* <WaitlistForm /> */}
+        {/* <WIPInput /> */}
         <a href={formURL} target="_blank" rel="noreferrer">
-          <Button label={"Join the waitlist"} style={"primaryLong"} />
-        </a> */}
+          <Button label={"Join the waitlist"} buttonStyle={'primaryLong'} type={'button'} />
+        </a>
         <p className="text-neutral-400 text-center text-sm max-w-[256px]">
           {footnote}
           <span className="font-semibold"> Test Flight</span>
