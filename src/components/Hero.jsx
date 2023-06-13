@@ -24,7 +24,7 @@ export default function Hero() {
           <div className="inline-flex">
             <motion.img
               src={logo}
-              className="self-center"
+              className="self-center h-9 md:h-16"
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
@@ -42,7 +42,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 2 }}
-          className="text-black w-screen px-4 sm:w-2/4 text-center"
+          className="text-black px-4 text-center"
         >
           We're working hard to bring you the best banking experience. Join the
           waitlist to be the first to know when we launch.

@@ -42,9 +42,8 @@ export default function HeroTitle({ text, image }) {
     >
       {words.map((word, index) => (
         <motion.h1
-          className="font-medium text-center leading-tight sm:p-0 max-w-[720px]"
+          className="font-medium text-4xl text-center leading-tight sm:p-0 mr-2 md:text-7xl md:mr-4"
           variants={child}
-          style={{ marginRight: "16px" }}
           key={index}
         >
           {image}
