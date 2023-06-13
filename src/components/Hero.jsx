@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 import HeroTitle from "./HeroTitle";
 import WaitlistForm from "./WaitlistForm";
 import Button from "./Button";
-import globalConsts from '../globalConsts.json'
+import globalConsts from '../globalConsts.json';
+import Balancer from 'react-wrap-balancer';
 
 
 export default function Hero() {
@@ -13,7 +14,7 @@ export default function Hero() {
   const formURL = globalConsts.urls.waitlistFormTally;
 
   return (
-    <div className="flex flex-col items-center gap-6 sm:gap-11 mt-12">
+    <div className="flex flex-col items-center gap-6 sm:gap-11 mt-12 max-w-[720px]">
       <div className="flex flex-col items-center gap-2 sm:gap-6">
         <motion.h5
           initial={{ opacity: 0 }}
@@ -45,10 +46,12 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 2 }}
-          className="text-black px-4 text-center"
+          className="text-neutral-400 px-4 text-center w-full"
         >
-          We're working hard to bring you the best banking experience. Join the
-          waitlist to be the first to know when we launch.
+          <Balancer>
+            We're working hard to bring you the best banking experience. Join the
+            waitlist to be the first to know when we launch.
+          </Balancer>
         </motion.p>
       </div>
       <motion.div
