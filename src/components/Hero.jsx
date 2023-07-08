@@ -1,9 +1,8 @@
-import product_image from "../assets/images/new-product-image.png";
+import product_image from "../assets/images/frey_overview.png";
 import logo from "../assets/images/logo.svg";
 
 import { motion } from "framer-motion";
 import HeroTitle from "./HeroTitle";
-import WaitlistForm from "./WaitlistForm";
 import Button from "./Button";
 import globalConsts from '../globalConsts.json';
 import Balancer from 'react-wrap-balancer';
@@ -60,8 +59,6 @@ export default function Hero() {
         transition={{ duration: 1, delay: 2.5 }}
         className="flex flex-col gap-4 items-center mb-8"
       >
-        {/* <WaitlistForm /> */}
-        {/* <WIPInput /> */}
         <a href={formURL} target="_blank" rel="noreferrer">
           <Button label={"Join the waitlist"} buttonStyle={'primaryLong'} type={'button'} />
         </a>
