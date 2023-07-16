@@ -2,7 +2,7 @@ import logo from "../assets/images/logo-footer.svg";
 import Button from "./Button";
 import globalConsts from "../globalConsts.json";
 
-const formURL = globalConsts.urls.waitlistForm;
+const formURL = globalConsts.urls.waitlistFormTally;
 const twitter = globalConsts.urls.twitter;
 const mail = globalConsts.urls.email;
 const privacy = globalConsts.urls.privacy;
